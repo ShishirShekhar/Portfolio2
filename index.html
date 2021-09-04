@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="./src/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Main -->
+    <main class='main'>
+
+        <!-- Navbar -->
+        <nav class='navBar'>
+
+            <h1>Aditya Gusain Portfolio</h1>
+
+            <div class='navigationMenu'>
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contactForm">Let's Connect!</a>
+            <div>
+
+        </nav>
+
+        <!-- Hero Section -->
+        <section class='heroSection'>
+
+            <img class='profileImage'
+                src='./src/images/profile.png' />
+            
+            <div class='herosectionDetails'>
+                <h1>Shishir Shekhar</h1>
+                <h3>Data Scientist Intern at ShapeAI</h3>
+            </div>
+
+        </section>
+
+        <!-- About Me section -->
+        <section class='aboutMe' id='aboutMe'>
+
+            <h1>What I Do...</h1>
+
+            <p>
+                Hi! I am a Data Scientist Intern and Full Stack Developer Intern at an Ed-tech company. 
+                I'm a highly motivated person with an ability to learn and adapt quickly to new projects and environments, 
+                very enthusiastic to learn about technologies and enjoy interactive discussions. 
+                I'm also really good at multi-tasking and time management. 
+                I have also created a few web apps and really curious about finding relations between the data.
+            </p>
+
+        </section>
+
+        <!-- Skills and Project section -->
+        <section class='skillsAndProjects'>
+
+            <!-- Skills section -->
+            <div class='skills' id='skills'>
+
+                <h1 class='cardHeading'>Skills</h1>
+
+                <img title="Python" src="./src/images/python-svgrepo-com.svg">
+                <img title="data Science" src="./src/images/data-scientist-research-data-profession-svgrepo-com.svg">
+                <img title='HTML' src="./src/images/html5-svgrepo-com.svg">
+                <img title='CSS' src="./src/images/css-svgrepo-com.svg">
+                <img title='Javascript' src="./src/images/javascript-logo-svgrepo-com.svg">
+                <img title='Node.JS' src="./src/images/nodejs-logo-svgrepo-com.svg">
+                <img title='React' src="./src/images/react-logo-svgrepo-com.svg">
+                <img title='MongoDB' src="./src/images/mongodb-svgrepo-com.svg">
+
+            </div>
+
+            <!-- Projects section -->
+            <div class='projects' id='projects'>
+
+                <h1 class='cardHeading'>Projects</h1>
+
+                <div class='projectContainer'>
+                    <img src='./src/images/web-development-svgrepo-com.svg' />
+                    <div class='projectDescription'>
+                        <h4>Shimato</h4>
+                        <p>
+                            This project is inspired from zomato, 
+                            I have tried a create a food ording website.
+                        </p>
+                    </div>
+                </div>
+
+                <div class='projectContainer'>
+                    <img src='./src/images/python-svgrepo-com.svg' />
+                    <div class='projectDescription'>
+                        <h4>iris-species-clf</h4>
+                        <p>
+                            This web app is created to classify the species of iris flower, 
+                            you can also select different machine learning alogrithm and tune them accordingly.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class='contactForm' id='contactForm'>
+
+            <h1>Let's Connect!</h2>
+
+            <div class='formGroup'>
+                <label for='name'>Enter Full Name</label><br />
+                <input type='text' id='name' placeholder='Full Name' />
+            </div>
+
+            <div class='formGroup'>
+                <label for='email'>Email</label><br />
+                <input type='email' id='email' placeholder='Email' />
+            </div>
+
+            <div class='formGroup'>
+                <label for='message'>Message</label><br />
+                <textarea placeholder="Send some message!" id="message"
+                        name="w3review" rows="4" cols="50"
+                ></textarea>
+            </div>
+
+            <button class='submitButton' onClick={submit()}>Connect</button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
